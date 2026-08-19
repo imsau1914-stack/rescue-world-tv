@@ -12,6 +12,7 @@ export default function CategoriesPage() {
 
   return (
     <main className="categories-page">
+      <header className="live-topbar">
 <a href="/" className="live-brand">
   <img
     src="/logo rescue tv.svg"
