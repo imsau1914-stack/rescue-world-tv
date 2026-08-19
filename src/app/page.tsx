@@ -101,14 +101,13 @@ export default function Home() {
   return (
     <main className="site">
       <header className="topbar">
-        <a className="brand" href="#">
-          <div className="brand-globe">🌎</div>
-
-          <div className="brand-text">
-            <strong>RESCUE</strong>
-            <span>WORLD TV</span>
-          </div>
-        </a>
+        <a className="brand" href="/">
+  <img
+    src="/rescue-vertical-transp-01.svg"
+    alt="Rescue World TV"
+    className="brand-logo"
+  />
+</a>
 
         <nav className="nav">
           <a className="active" href="#">
