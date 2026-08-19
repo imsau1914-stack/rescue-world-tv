@@ -120,9 +120,9 @@ export default function Home() {
         </nav>
 
         <div className="top-actions">
-          <button className="search-button" aria-label="Search">
+          <a className="search-button" href="/Search"> aria-label="search">
             ⌕
-          </button>
+          </a>
 
           <button className="donate-button">
             DONATE <span>♡</span>
