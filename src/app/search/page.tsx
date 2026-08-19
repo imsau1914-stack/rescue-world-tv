@@ -42,17 +42,54 @@ export default function SearchPage() {
         </div>
       </header>
 
-      <section className="search-content">
-        <span className="about-section-label">SEARCH</span>
+     <section className="search-content">
+  <div className="search-hero">
+    <span className="about-section-label">SEARCH</span>
 
-        <h1>Find what inspires you.</h1>
+    <h1>
+      Find what
+      <br />
+      inspires you<span className="search-dot">.</span>
+    </h1>
 
-        <p>
-          Search sermons, Bible studies, health programs, family content,
-          music and more.
-        </p>
+    <p>
+      Search sermons, Bible studies, health programs,
+      family content, music and more.
+    </p>
 
-      </section>
+    <div className="search-main-box">
+      <div className="search-main-input">
+        <span className="search-main-icon">⌕</span>
+
+        <input
+          type="search"
+          placeholder="Search Rescue World TV..."
+          aria-label="Search Rescue World TV"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+
+      <button
+        type="button"
+        className="search-main-button"
+        onClick={() => alert(`Searching for: ${query}`)}
+      >
+        SEARCH
+      </button>
+    </div>
+
+    <div className="popular-searches">
+      <span>POPULAR SEARCHES:</span>
+      <button type="button">Faith</button>
+      <button type="button">Health</button>
+      <button type="button">Family</button>
+      <button type="button">Music</button>
+      <button type="button">Hope</button>
+      <button type="button">Bible Study</button>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
