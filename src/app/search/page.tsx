@@ -119,7 +119,10 @@ export default function SearchPage() {
     </a>
 
     <a href="/categories" className="search-category-card">
-      <div className="search-category-image health-card"></div>
+      <div 
+        className="search-category-image" 
+        style={{ backgroundImage: "url('/health images.png')" }}
+        ></div>
       <div className="search-category-body">
         <h3>Health</h3>
         <p>Programs for a better life and total well-being.</p>
@@ -127,7 +130,10 @@ export default function SearchPage() {
     </a>
 
     <a href="/categories" className="search-category-card">
-      <div className="search-category-image family-card"></div>
+      <div 
+        className="search-category-image"
+        style={{ backgroundImage: "url('/family image.png')" }}
+        ></div>
       <div className="search-category-body">
         <h3>Family</h3>
         <p>Strengthen your home with biblical principles.</p>
@@ -135,7 +141,10 @@ export default function SearchPage() {
     </a>
 
     <a href="/categories" className="search-category-card">
-      <div className="search-category-image music-card"></div>
+      <div 
+        className="search-category-image" 
+        style={{ backgroundImage: "url('/image music.png')" }}
+        ></div>
       <div className="search-category-body">
         <h3>Music</h3>
         <p>Worship, praise and music that lifts your soul.</p>
