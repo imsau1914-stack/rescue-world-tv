@@ -1652,3 +1652,154 @@ button {
     min-height: 62px;
   }
 }
+
+/* =========================
+   SEARCH CATEGORIES
+========================= */
+
+.search-categories {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 10px 0 90px;
+}
+
+.search-categories-header {
+  margin-bottom: 22px;
+}
+
+.search-categories-header h2 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.search-category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.search-category-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: rgba(7, 20, 34, 0.82);
+  color: white;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.search-category-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 191, 25, 0.55);
+  background: rgba(10, 30, 50, 0.95);
+}
+
+.search-category-image {
+  height: 150px;
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.75) 100%),
+    radial-gradient(circle at 50% 30%, rgba(255, 191, 25, 0.22), transparent 55%),
+    #17304a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sermons-card {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.82) 100%),
+    radial-gradient(circle at 70% 20%, rgba(255, 166, 0, 0.35), transparent 45%),
+    #2c241a;
+}
+
+.bible-card {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.82) 100%),
+    radial-gradient(circle at 50% 30%, rgba(196, 167, 108, 0.3), transparent 45%),
+    #28313c;
+}
+
+.health-card {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.82) 100%),
+    radial-gradient(circle at 50% 25%, rgba(94, 193, 120, 0.35), transparent 45%),
+    #153527;
+}
+
+.family-card {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.82) 100%),
+    radial-gradient(circle at 45% 30%, rgba(255, 182, 89, 0.32), transparent 45%),
+    #3b2b23;
+}
+
+.music-card {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(2, 10, 18, 0.82) 100%),
+    radial-gradient(circle at 45% 30%, rgba(201, 102, 255, 0.3), transparent 45%),
+    #29223d;
+}
+
+.search-category-body {
+  padding: 18px 16px 20px;
+  text-align: center;
+}
+
+.search-category-body h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.search-category-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.search-categories-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.search-categories-action a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 24px;
+  border: 1px solid #ffbf19;
+  border-radius: 999px;
+  color: #ffbf19;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+}
+
+.search-categories-action a:hover {
+  background: rgba(255, 191, 25, 0.08);
+}
+
+@media (max-width: 1000px) {
+  .search-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .search-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-categories {
+    width: calc(100% - 36px);
+  }
+}
