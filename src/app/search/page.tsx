@@ -108,7 +108,10 @@ export default function SearchPage() {
     </a>
 
     <a href="/categories" className="search-category-card">
-      <div className="search-category-image bible-card"></div>
+      <div 
+        className="search-category-image"
+        style={{ backgroundImage: "url('/open bible.png')" }}
+        ></div>
       <div className="search-category-body">
         <h3>Bible Studies</h3>
         <p>Grow deeper in the Word and in your faith.</p>
