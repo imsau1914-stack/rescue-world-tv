@@ -3,13 +3,12 @@ export default function LivePage() {
     <main className="live-page">
       <header className="live-topbar">
         <a href="/" className="live-brand">
-          <div className="live-brand-globe">🌎</div>
-
-          <div className="live-brand-text">
-            <strong>RESCUE</strong>
-            <span>WORLD TV</span>
-          </div>
-        </a>
+  <img
+    src="/logo rescue tv.svg"
+    alt="Rescue World TV"
+    className="brand-logo"
+  />
+</a>
 
         <nav className="live-nav">
           <a href="/">HOME</a>
