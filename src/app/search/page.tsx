@@ -97,7 +97,10 @@ export default function SearchPage() {
 
   <div className="search-category-grid">
     <a href="/categories" className="search-category-card">
-      <div className="search-category-image sermons-card"></div>
+      <div 
+        className="search-category-image"
+        style={{ backgroundImage: "url('/image sermon.png')" }}
+        ></div>
       <div className="search-category-body">
         <h3>Sermons</h3>
         <p>Inspiration and messages that transform lives.</p>
