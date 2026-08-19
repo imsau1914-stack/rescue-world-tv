@@ -115,9 +115,9 @@ export default function Home() {
             HOME
           </a>
           <a href="/live">LIVE</a>
-          <a href="#watch">WATCH</a>
-          <a href="#categories">CATEGORIES</a>
-          <a href="#about">ABOUT</a>
+          <a href="/watch">WATCH</a>
+          <a href="/categories">CATEGORIES</a>
+          <a href="/about">ABOUT</a>
         </nav>
 
         <div className="top-actions">
