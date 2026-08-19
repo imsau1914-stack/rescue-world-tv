@@ -1450,3 +1450,36 @@ button {
   display: flex;
   align-items: center;
 }
+
+/* HEADER SEARCH */
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 220px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header-search-icon {
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.header-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.header-search input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
