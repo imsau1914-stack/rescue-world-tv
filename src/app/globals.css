@@ -1439,8 +1439,8 @@ button {
 
 .brand-logo {
   display: block;
-  width: 550px;
-  height: 140px;
+  width: 500px;
+  height: 105px;
   object-fit: contain;
   object-position: left center;
 }
