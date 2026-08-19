@@ -1803,3 +1803,10 @@ button {
     width: calc(100% - 36px);
   }
 }
+
+/* SEARCH CATEGORY IMAGES */
+.search-category-image {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
