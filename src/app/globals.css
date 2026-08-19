@@ -1443,6 +1443,7 @@ button {
   height: 105px;
   object-fit: contain;
   object-position: left center;
+  margin-top: 15px
 }
 
 .brand {
