@@ -52,21 +52,6 @@ export default function SearchPage() {
           music and more.
         </p>
 
-        <div className="search-box">
-          <input
-            type="search"
-            placeholder="Search Rescue World TV..."
-            aria-label="Search Rescue World TV"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-        <button
-  type="button"
-  onClick={() => alert(`Searching for: ${query}`)}
->
-  SEARCH
-</button>
-        </div>
       </section>
     </main>
   );
