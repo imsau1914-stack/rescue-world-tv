@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 export default function SearchPage() {
+  const [query, setQuery] = useState("");
   return (
     <main className="search-page">
       <header className="live-topbar">
@@ -48,8 +51,15 @@ export default function SearchPage() {
             type="search"
             placeholder="Search Rescue World TV..."
             aria-label="Search Rescue World TV"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="button">SEARCH</button>
+        <button
+  type="button"
+  onClick={() => alert(`Searching for: ${query}`)}
+>
+  SEARCH
+</button>
         </div>
       </section>
     </main>
