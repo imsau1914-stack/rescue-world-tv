@@ -12,7 +12,7 @@ export default function CategoriesPage() {
 
   return (
     <main className="categories-page">
-      <a href="/" className="live-brand">
+<a href="/" className="live-brand">
   <img
     src="/logo rescue tv.svg"
     alt="Rescue World TV"
