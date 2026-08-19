@@ -90,6 +90,57 @@ export default function SearchPage() {
     </div>
   </div>
 </section>
+      <section className="search-categories">
+  <div className="search-categories-header">
+    <h2>Explore Categories</h2>
+  </div>
+
+  <div className="search-category-grid">
+    <a href="/categories" className="search-category-card">
+      <div className="search-category-image sermons-card"></div>
+      <div className="search-category-body">
+        <h3>Sermons</h3>
+        <p>Inspiration and messages that transform lives.</p>
+      </div>
+    </a>
+
+    <a href="/categories" className="search-category-card">
+      <div className="search-category-image bible-card"></div>
+      <div className="search-category-body">
+        <h3>Bible Studies</h3>
+        <p>Grow deeper in the Word and in your faith.</p>
+      </div>
+    </a>
+
+    <a href="/categories" className="search-category-card">
+      <div className="search-category-image health-card"></div>
+      <div className="search-category-body">
+        <h3>Health</h3>
+        <p>Programs for a better life and total well-being.</p>
+      </div>
+    </a>
+
+    <a href="/categories" className="search-category-card">
+      <div className="search-category-image family-card"></div>
+      <div className="search-category-body">
+        <h3>Family</h3>
+        <p>Strengthen your home with biblical principles.</p>
+      </div>
+    </a>
+
+    <a href="/categories" className="search-category-card">
+      <div className="search-category-image music-card"></div>
+      <div className="search-category-body">
+        <h3>Music</h3>
+        <p>Worship, praise and music that lifts your soul.</p>
+      </div>
+    </a>
+  </div>
+
+  <div className="search-categories-action">
+    <a href="/categories">VIEW ALL CATEGORIES →</a>
+  </div>
+</section>
     </main>
   );
 }
