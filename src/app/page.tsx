@@ -103,7 +103,7 @@ export default function Home() {
       <header className="topbar">
         <a className="brand" href="/">
   <img
-    src="/rescue-vertical-transp-01.svg"
+    src="/rescue-vertical_transp-01.svg"
     alt="Rescue World TV"
     className="brand-logo"
   />
