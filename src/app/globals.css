@@ -1432,3 +1432,19 @@ button {
     min-height: auto;
   }
 }
+
+/* =========================
+   OFFICIAL RESCUE WORLD TV LOGO
+========================= */
+
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
