@@ -22,10 +22,16 @@ export default function SearchPage() {
         </nav>
 
         <div className="live-top-actions">
-          <a className="search-button" href="/search" aria-label="Search">
-            ⌕
-          </a>
-
+         <div className="header-search">
+  <span className="header-search-icon">⌕</span>
+  <input
+    type="search"
+    placeholder="Search..."
+    aria-label="Search Rescue World TV"
+    value={query}
+    onChange={(e) => setQuery(e.target.value)}
+  />
+</div>
           <button className="donate-button">
             DONATE <span>♡</span>
           </button>
