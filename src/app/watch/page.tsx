@@ -1,6 +1,38 @@
 export default function WatchPage() {
   return (
     <main className="watch-page">
+      <header className="live-topbar">
+  <a href="/" className="live-brand">
+    <div className="live-brand-globe">🌎</div>
+
+    <div className="live-brand-text">
+      <strong>RESCUE</strong>
+      <span>WORLD TV</span>
+    </div>
+  </a>
+
+  <nav className="live-nav">
+    <a href="/">HOME</a>
+    <a href="/live">LIVE</a>
+    <a className="active" href="/watch">
+      WATCH
+    </a>
+    <a href="/#categories">CATEGORIES</a>
+    <a href="/#about">ABOUT</a>
+  </nav>
+
+  <div className="live-top-actions">
+    <button className="search-button" aria-label="Search">
+      ⌕
+    </button>
+
+    <button className="donate-button">
+      DONATE <span>♡</span>
+    </button>
+
+    <button className="signin-button">♟ &nbsp; SIGN IN</button>
+  </div>
+</header>
       <section className="watch-hero">
         <span className="watch-label">WATCH</span>
 
