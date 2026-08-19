@@ -114,7 +114,7 @@ export default function Home() {
           <a className="active" href="#">
             HOME
           </a>
-          <a href="#live">LIVE</a>
+          <a href="/live">LIVE</a>
           <a href="#watch">WATCH</a>
           <a href="#categories">CATEGORIES</a>
           <a href="#about">ABOUT</a>
