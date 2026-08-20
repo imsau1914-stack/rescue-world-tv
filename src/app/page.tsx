@@ -100,39 +100,8 @@ function ProgramCard({
 export default function Home() {
   return (
     <main className="site">
-      <header className="live-topbar">
-        <a href="/" className="live-brand">
-  <img
-    src="/logo rescue tv.svg"
-    alt="Rescue World TV"
-    className="brand-logo"
-  />
-</a>
-
-        <nav className="live-nav">
-          <a className="active" href="#">
-            HOME
-          </a>
-          <a href="/live">LIVE</a>
-          <a href="/watch">WATCH</a>
-          <a href="/categories">CATEGORIES</a>
-          <a href="/about">ABOUT</a>
-        </nav>
-
-        <div className="live-top-actions">
-         <a className="search-button" href="/search" aria-label="Search">
-  ⌕
-</a>
-
-          <button className="donate-button">
-            DONATE <span>♡</span>
-          </button>
-
-          <button className="signin-button">♟ &nbsp; SIGN IN</button>
-        </div>
-      </header>
-
-      <section className="hero" id="live">
+      
+     <section className="hero" id="live">
         <div className="hero-overlay" />
 
         <div className="hero-content">
