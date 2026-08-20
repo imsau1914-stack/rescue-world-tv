@@ -6,8 +6,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="topbar">
-      <a className="brand" href="/">
+    <header className="live-topbar">
+      <a className="live-brand" href="/">
         <img
           src="/logo rescue tv.svg"
           alt="Rescue World TV"
@@ -15,7 +15,7 @@ export default function Header() {
         />
       </a>
 
-      <nav className="nav">
+      <nav className="live-nav">
         <a className={pathname === "/" ? "active" : ""} href="/">
           HOME
         </a>
@@ -40,7 +40,7 @@ export default function Header() {
         </a>
       </nav>
 
-      <div className="top-actions">
+      <div className="live-top-actions">
         <a className="search-button" href="/search" aria-label="Search">
           ⌕
         </a>
