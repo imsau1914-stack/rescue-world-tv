@@ -41,9 +41,20 @@ export default function Header() {
       </nav>
 
       <div className="live-top-actions">
-        <a className="search-button" href="/search" aria-label="Search">
-          ⌕
-        </a>
+       <form
+  className="header-search"
+  action="/search"
+  method="get"
+>
+  <span className="header-search-icon">⌕</span>
+
+  <input
+    type="search"
+    name="q"
+    placeholder="Search..."
+    aria-label="Search Rescue World TV"
+  />
+</form>
 
         <button className="donate-button">
           DONATE <span>♡</span>
