@@ -132,11 +132,51 @@ export default function SearchPage() {
 >
   Faith
 </button>
-      <button type="button">Health</button>
-      <button type="button">Family</button>
-      <button type="button">Music</button>
-      <button type="button">Hope</button>
-      <button type="button">Bible Study</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Health");
+    setSearched(true);
+  }}
+>
+  Health
+</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Family");
+    setSearched(true);
+  }}
+>
+  Family
+</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Music");
+    setSearched(true);
+  }}
+>
+  Music
+</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Hope");
+    setSearched(true);
+  }}
+>
+  Hope
+</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Bible Study");
+    setSearched(true);
+  }}
+>
+  Bible study
+</button>      
     </div>
   {searched && (
   <div className="search-results-message">
