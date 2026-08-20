@@ -46,9 +46,11 @@ export default function Header() {
   action="/search"
   method="get"
 >
-  <span className="header-search-icon">⌕</span>
-
+  <label htmlFor=header-search-input" className="header-search-icon">
+    ⌕      
+  </label>
   <input
+    id="header-search-input"
     type="search"
     name="q"
     placeholder="Search..."
