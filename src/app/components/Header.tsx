@@ -46,7 +46,7 @@ export default function Header() {
   action="/search"
   method="get"
 >
-  <label htmlFor=header-search-input" className="header-search-icon">
+  <label htmlFor="header-search-input" className="header-search-icon">
     ⌕      
   </label>
   <input
