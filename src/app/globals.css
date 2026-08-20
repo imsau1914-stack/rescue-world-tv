@@ -1457,7 +1457,7 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 24px;
+  width: 30px;
   height: 38px;
   padding: 0;
   overflow: hidden;
@@ -1470,8 +1470,12 @@ button {
 
 .header-search-icon {
   color: white;
-  font-size: 18px;
+  font-size: 30px;
   flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-search input {
