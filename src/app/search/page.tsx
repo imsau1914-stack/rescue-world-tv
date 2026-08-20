@@ -2,6 +2,7 @@
 import { useState } from "react";
 export default function SearchPage() {
   const [query, setQuery] = useState("");
+  const [searched, setSearched] = useState(false);
   return (
     <main className="search-page">
       <header className="live-topbar">
@@ -73,7 +74,7 @@ export default function SearchPage() {
       <button
         type="button"
         className="search-main-button"
-        onClick={() => alert(`Searching for: ${query}`)}
+        onClick={() => setSearched(true)}
       >
         SEARCH
       </button>
@@ -88,6 +89,12 @@ export default function SearchPage() {
       <button type="button">Hope</button>
       <button type="button">Bible Study</button>
     </div>
+    {searched && (
+      <div className="search-results-message"> 
+        <span> SEARCH RESULTS</span>
+        <h2>Results for "{query}"</h2>
+  </div>
+      )}
   </div>
 </section>
       <section className="search-categories">
