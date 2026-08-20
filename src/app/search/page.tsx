@@ -123,7 +123,15 @@ export default function SearchPage() {
 
     <div className="popular-searches">
       <span>POPULAR SEARCHES:</span>
-      <button type="button">Faith</button>
+<button
+  type="button"
+  onClick={() => {
+    setQuery("Faith");
+    setSearched(true);
+  }}
+>
+  Faith
+</button>
       <button type="button">Health</button>
       <button type="button">Family</button>
       <button type="button">Music</button>
