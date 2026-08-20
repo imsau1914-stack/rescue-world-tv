@@ -3,6 +3,47 @@ import { useState } from "react";
 export default function SearchPage() {
   const [query, setQuery] = useState("");
   const [searched, setSearched] = useState(false);
+  const searchItems = [
+  {
+    title: "Sermons",
+    description: "Inspiration and messages that transform lives.",
+    image: "/image sermon.png",
+    keywords: "sermon sermons preaching faith hope message",
+  },
+  {
+    title: "Bible Studies",
+    description: "Grow deeper in the Word and in your faith.",
+    image: "/open bible.png",
+    keywords: "bible bible study scripture word faith",
+  },
+  {
+    title: "Health",
+    description: "Programs for a better life and total well-being.",
+    image: "/health images.png",
+    keywords: "health wellness nutrition healthy lifestyle",
+  },
+  {
+    title: "Family",
+    description: "Strengthen your home with biblical principles.",
+    image: "/family image.png",
+    keywords: "family marriage children home relationships",
+  },
+  {
+    title: "Music",
+    description: "Worship, praise and music that lifts your soul.",
+    image: "/image music.png",
+    keywords: "music worship praise songs instruments",
+  },
+];
+  const filteredItems = searchItems.filter((item) => {
+  const term = query.toLowerCase().trim();
+
+  return (
+    item.title.toLowerCase().includes(term) ||
+    item.description.toLowerCase().includes(term) ||
+    item.keywords.toLowerCase().includes(term)
+  );
+});
   return (
     <main className="search-page">
       <header className="live-topbar">
@@ -89,12 +130,24 @@ export default function SearchPage() {
       <button type="button">Hope</button>
       <button type="button">Bible Study</button>
     </div>
-    {searched && (
-      <div className="search-results-message"> 
-        <span> SEARCH RESULTS</span>
-        <h2>Results for "{query}"</h2>
+  {searched && (
+  <div className="search-results-message">
+    <span>SEARCH RESULTS</span>
+    <h2>Results for "{query}"</h2>
+
+    <div className="search-results-grid">
+      {filteredItems.map((item) => (
+        <div className="search-result-card" key={item.title}>
+          <img src={item.image} alt={item.title} />
+          <div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   </div>
-      )}
+)}
   </div>
 </section>
       <section className="search-categories">
