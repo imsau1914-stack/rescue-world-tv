@@ -1885,10 +1885,3 @@ button {
     grid-template-columns: 1fr;
   }
 }
-
-.nav a.active {
-  color: #ffb000 !important;
-  border-bottom: 3px solid #ffb000 !important;
-  padding-bottom: 1px !important;
-}
-
