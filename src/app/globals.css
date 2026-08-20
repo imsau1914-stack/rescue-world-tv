@@ -1888,17 +1888,7 @@ button {
 
 .nav a.active {
   color: #ffb000 !important;
-  position: relative;
-  text-decoration: none;
-  border-bottom: none;
+  border-bottom: 3px solid #ffb000 !important;
+  padding-bottom: 1px !important;
 }
 
-.nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1px;
-  height: 1px;
-  background: #ffb000;
-}
