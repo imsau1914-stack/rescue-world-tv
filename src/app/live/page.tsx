@@ -1,38 +1,7 @@
 export default function LivePage() {
   return (
     <main className="live-page">
-      <header className="live-topbar">
-        <a href="/" className="live-brand">
-  <img
-    src="/logo rescue tv.svg"
-    alt="Rescue World TV"
-    className="brand-logo"
-  />
-</a>
-
-        <nav className="live-nav">
-          <a href="/">HOME</a>
-          <a className="active" href="/live">
-            LIVE
-          </a>
-          <a href="/#watch">WATCH</a>
-          <a href="/#categories">CATEGORIES</a>
-          <a href="/#about">ABOUT</a>
-        </nav>
-
-        <div className="live-top-actions">
-          <button className="search-button" aria-label="Search">
-            ⌕
-          </button>
-
-          <button className="donate-button">
-            DONATE <span>♡</span>
-          </button>
-
-          <button className="signin-button">♟ &nbsp; SIGN IN</button>
-        </div>
-      </header>
-
+   
       <section className="live-page-content">
         <div className="live-page-heading">
           <span className="live-page-badge">● LIVE NOW</span>
