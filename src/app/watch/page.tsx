@@ -1,6 +1,6 @@
 export default function WatchPage() {
   return (
-    <main clasName="watch-page">
+    <main className="watch-page">
       <section className="watch-hero">
         <span className="watch-label">WATCH</span>
 
