@@ -1,38 +1,7 @@
 export default function AboutPage() {
   return (
     <main className="about-page">
-      <header className="live-topbar">
-    <a href="/" className="live-brand">
-      <img
-        src="/logo rescue tv.svg"
-        alt="Rescue World TV"
-        className="brand-logo"
-      />
-    </a>
-
-        <nav className="live-nav">
-          <a href="/">HOME</a>
-          <a href="/live">LIVE</a>
-          <a href="/watch">WATCH</a>
-          <a href="/categories">CATEGORIES</a>
-          <a className="active" href="/about">
-            ABOUT
-          </a>
-        </nav>
-
-        <div className="live-top-actions">
-          <button className="search-button" aria-label="Search">
-            ⌕
-          </button>
-
-          <button className="donate-button">
-            DONATE <span>♡</span>
-          </button>
-
-          <button className="signin-button">♟ &nbsp; SIGN IN</button>
-        </div>
-      </header>
-
+     
       <section className="about-content">
         <div className="about-hero">
           <span className="about-label">ABOUT RESCUE WORLD TV</span>
