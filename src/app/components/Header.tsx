@@ -1,4 +1,10 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="topbar">
       <a className="brand" href="/">
@@ -10,23 +16,42 @@ export default function Header() {
       </a>
 
       <nav className="nav">
-        <a href="/">HOME</a>
-        <a href="/live">LIVE</a>
-        <a href="/watch">WATCH</a>
-        <a href="/categories">CATEGORIES</a>
-        <a href="/about">ABOUT</a>
+        <a className={pathname === "/" ? "active" : ""} href="/">
+          HOME
+        </a>
+
+        <a className={pathname === "/live" ? "active" : ""} href="/live">
+          LIVE
+        </a>
+
+        <a className={pathname === "/watch" ? "active" : ""} href="/watch">
+          WATCH
+        </a>
+
+        <a
+          className={pathname === "/categories" ? "active" : ""}
+          href="/categories"
+        >
+          CATEGORIES
+        </a>
+
+        <a className={pathname === "/about" ? "active" : ""} href="/about">
+          ABOUT
+        </a>
       </nav>
 
       <div className="top-actions">
         <a className="search-button" href="/search" aria-label="Search">
-           ⌕
+          ⌕
         </a>
 
         <button className="donate-button">
           DONATE <span>♡</span>
         </button>
 
-        <button className="signin-button">♟ &nbsp; SIGN IN</button>
+        <button className="signin-button">
+          ♟ &nbsp; SIGN IN
+        </button>
       </div>
     </header>
   );
