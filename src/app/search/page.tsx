@@ -46,44 +46,7 @@ export default function SearchPage() {
 });
   return (
     <main className="search-page">
-      <header className="live-topbar">
-        <a href="/" className="live-brand">
-          <img
-            src="/logo rescue tv.svg"
-            alt="Rescue World TV"
-            className="brand-logo"
-          />
-        </a>
-
-        <nav className="live-nav">
-          <a href="/">HOME</a>
-          <a href="/live">LIVE</a>
-          <a href="/watch">WATCH</a>
-          <a href="/categories">CATEGORIES</a>
-          <a href="/about">ABOUT</a>
-        </nav>
-
-        <div className="live-top-actions">
-         <div className="header-search">
-  <span className="header-search-icon">⌕</span>
-  <input
-    type="search"
-    placeholder="Search..."
-    aria-label="Search Rescue World TV"
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-  />
-</div>
-          <button className="donate-button">
-            DONATE <span>♡</span>
-          </button>
-
-          <button className="signin-button">
-            ♟ &nbsp; SIGN IN
-          </button>
-        </div>
-      </header>
-
+      
      <section className="search-content">
   <div className="search-hero">
     <span className="about-section-label">SEARCH</span>
