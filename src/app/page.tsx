@@ -100,8 +100,8 @@ function ProgramCard({
 export default function Home() {
   return (
     <main className="site">
-      <header className="topbar">
-        <a className="brand" href="/">
+      <header className="live-topbar">
+        <a href="/" className="live-brand">
   <img
     src="/logo rescue tv.svg"
     alt="Rescue World TV"
@@ -109,7 +109,7 @@ export default function Home() {
   />
 </a>
 
-        <nav className="nav">
+        <nav className="live-nav">
           <a className="active" href="#">
             HOME
           </a>
@@ -119,7 +119,7 @@ export default function Home() {
           <a href="/about">ABOUT</a>
         </nav>
 
-        <div className="top-actions">
+        <div className="live-top-actions">
          <a className="search-button" href="/search" aria-label="Search">
   ⌕
 </a>
