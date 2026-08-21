@@ -121,11 +121,11 @@ export default function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a className="primary-button" href="#watch">
+              <a className="primary-button" href="/live">
                 ▶ &nbsp; WATCH LIVE
               </a>
 
-              <a className="secondary-button" href="#watch">
+              <a className="secondary-button" href="watch">
                 BROWSE PROGRAMS
               </a>
             </div>
@@ -147,9 +147,9 @@ export default function Home() {
               with the message of hope.
             </p>
 
-            <button className="watch-live-button">
+            <a href="/live" className="watch-live-button">
               ▶ &nbsp; WATCH LIVE
-            </button>
+            </a>
           </aside>
         </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
       <section className="content-section" id="watch">
         <div className="section-heading">
           <h2>FEATURED</h2>
-          <a href="#">VIEW ALL &nbsp;›</a>
+          <a href="/watch">VIEW ALL &nbsp;›</a>
         </div>
 
         <div className="featured-grid">
@@ -179,7 +179,7 @@ export default function Home() {
       <section className="content-section latest-section">
         <div className="section-heading">
           <h2>LATEST PROGRAMS</h2>
-          <a href="#">VIEW ALL &nbsp;›</a>
+          <a href="/watch">VIEW ALL &nbsp;›</a>
         </div>
 
         <div className="latest-grid">
