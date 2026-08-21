@@ -77,6 +77,12 @@ button {
   font-size: 31px;
 }
 
+.brand-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
 .brand-text {
   display: flex;
   flex-direction: column;
