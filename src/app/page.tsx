@@ -140,10 +140,6 @@ export default function Home() {
 
             <div className="live-divider" />
 
-            <p className="live-description">
-              <span>● LIVE</span> 
-           </p>
-
             <a href="/live" className="watch-live-button">
               ▶ &nbsp; WATCH LIVE
             </a>
