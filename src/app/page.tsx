@@ -141,11 +141,8 @@ export default function Home() {
             <div className="live-divider" />
 
             <p className="live-description">
-              <span>● LIVE</span>
-              Inspiring the world
-              <br />
-              with the message of hope.
-            </p>
+              <span>● LIVE</span> 
+           </p>
 
             <a href="/live" className="watch-live-button">
               ▶ &nbsp; WATCH LIVE
