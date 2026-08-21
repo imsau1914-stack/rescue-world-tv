@@ -9,7 +9,7 @@ export default function Header() {
     <header className="live-topbar">
       <a className="live-brand" href="/">
         <img
-          src="/logo rescue tv.svg"
+          src="/logo rescue-world-tv2.svg"
           alt="Rescue World TV"
           className="brand-logo"
         />
