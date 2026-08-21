@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <img
-            src="/rescue-world-tv-lineal.svg"
+            src="/solo logo.svg"
             alt="Rescue World TV"
             className="footer-logo"
           />
