@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Rescue Wordl TV",
+	title: "Rescue World TV",
 	description: "Rescuing lives. Restoring purpose. Revealing hope through inspiring Christian programs for faith, health, and family.",
 };
 
