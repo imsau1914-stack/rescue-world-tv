@@ -342,8 +342,8 @@ button {
   background: var(--red);
   color: white;
   border-radius: 5px;
-  padding: 15px;
-  margin-top: 19px;
+  padding: 12px 15px;
+  margin-top: 28px;
   font-size: 17px;
   font-weight: 800;
   cursor: pointer;
