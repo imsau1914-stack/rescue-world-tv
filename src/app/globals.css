@@ -1918,8 +1918,8 @@ button {
 }
 
 .footer-logo {
-  width: 250px;
-  height: auto;
+  width: 80px;
+  height: 80px;
   display: block;
   object-fit: contain;
 }
