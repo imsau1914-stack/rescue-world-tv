@@ -148,13 +148,19 @@ export default function Home() {
     <main className="site">
       
 <section className="hero" id="live">
-  <div
-    key={currentSlide}
-    className="hero-bg"
-    style={{
-      backgroundImage: `url(${heroSlides[currentSlide].image})`,
-    }}
-  />
+
+  <div className="hero-backgrounds">
+  {heroSlides.map((slide, index) => (
+    <div
+      key={slide.image}
+      className={`hero-bg ${currentSlide === index ? "active" : ""}`}
+      style={{
+        backgroundImage: `url(${slide.image})`,
+      }}
+    />
+  ))}
+</div>
+  
         <div className="hero-overlay" />
 
         <div className="hero-content">
