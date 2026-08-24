@@ -150,9 +150,12 @@ export default function Home() {
     <section
   className="hero"
   id="live"
-  style={{
-    backgroundImage: `url(${heroSlides[currentSlide].image})`,
-  }}
+style={{
+  backgroundImage: `url(${heroSlides[currentSlide].image})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center center",
+  backgroundRepeat: "no-repeat",
+}}
 >
         <div className="hero-overlay" />
 
