@@ -136,6 +136,15 @@ const heroSlides = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const nextSlide = () => {
+  setCurrentSlide((current) => (current + 1) % heroSlides.length);
+};
+
+const prevSlide = () => {
+  setCurrentSlide(
+    (current) => (current - 1 + heroSlides.length) % heroSlides.length
+  );
+};
     useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((current) => (current + 1) % heroSlides.length);
@@ -207,7 +216,21 @@ export default function Home() {
             </a>
           </aside>
         </div>
+<button
+  className="hero-arrow hero-arrow-left"
+  onClick={prevSlide}
+  aria-label="Previous slide"
+>
+  ‹
+</button>
 
+<button
+  className="hero-arrow hero-arrow-right"
+  onClick={nextSlide}
+  aria-label="Next slide"
+>
+  ›
+</button>
        <div className="hero-dots">
   {heroSlides.map((_, index) => (
     <span
