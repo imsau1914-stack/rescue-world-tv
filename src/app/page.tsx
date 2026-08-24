@@ -162,7 +162,7 @@ style={{
         <div className="hero-content">
           <div className="hero-copy">
             
-            <h1>
+            <h1 className={currentSlide === 1 ? "hero-title-small" : ""}>
             {heroSlides[currentSlide].title1}
             <br />
             {heroSlides[currentSlide].title2}
