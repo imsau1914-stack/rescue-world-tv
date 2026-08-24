@@ -181,24 +181,24 @@ button {
       center 48% / 100% auto no-repeat;
 }
 
+.hero-backgrounds {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  animation: heroFade 1.2s ease-in-out;
-  z-index: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
 }
 
-@keyframes heroFade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.hero-bg.active {
+  opacity: 1;
 }
 
 .hero::after {
