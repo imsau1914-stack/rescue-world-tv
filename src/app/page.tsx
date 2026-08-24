@@ -106,7 +106,7 @@ const heroSlides = [
     highlight: "Revealing hope.",
     description1: "Inspiring programs that strengthen your faith,",
     description2: "health and family.",
-    image: "/hero-1.jpg",
+    image: "/hero-1.webp",
   },
   {
     title1: "Faith for today.",
@@ -114,7 +114,7 @@ const heroSlides = [
     highlight: "Christ for everyone.",
     description1: "Biblical messages created to inspire,",
     description2: "strengthen and transform lives.",
-    image: "/hero-2.jpg",
+    image: "/hero-2.webp",
   },
   {
     title1: "Healthy living.",
@@ -122,7 +122,7 @@ const heroSlides = [
     highlight: "A better life.",
     description1: "Practical programs for your health,",
     description2: "family and everyday life.",
-    image: "/hero-3.jpg",
+    image: "/hero-3.webp",
   },
   {
     title1: "Stories of faith.",
@@ -130,7 +130,7 @@ const heroSlides = [
     highlight: "Around the world.",
     description1: "Discover inspiring programs and stories",
     description2: "from the Rescue World community.",
-    image: "/hero-4.jpg",
+    image: "/hero-4.webp",
   },
 ];
 
