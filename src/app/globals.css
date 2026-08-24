@@ -261,9 +261,8 @@ button {
   font-weight: 800;
 }
 
-.hero-title-small {
-  font-size: 48px !important;
-  line-height: 1.02 !important;
+.hero-copy h1 span.hero-highlight-small {
+  font-size: 0.78em;
 }
 
   .hero-copy h1 span {
