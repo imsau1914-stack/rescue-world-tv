@@ -147,20 +147,18 @@ export default function Home() {
   return (
     <main className="site">
       
-    <section
-  className="hero"
-  id="live"
-style={{
-  backgroundImage: `url(${heroSlides[currentSlide].image})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  backgroundRepeat: "no-repeat",
-}}
->
+<section className="hero" id="live">
+  <div
+    key={currentSlide}
+    className="hero-bg"
+    style={{
+      backgroundImage: `url(${heroSlides[currentSlide].image})`,
+    }}
+  />
         <div className="hero-overlay" />
 
         <div className="hero-content">
-          <div className="hero-copy">
+          <div className="hero-copy" key={currentSlide}>
             
             <h1 className={currentSlide === 1 ? "hero-title-small" : ""}>
             {heroSlides[currentSlide].title1}
