@@ -166,12 +166,14 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-copy" key={currentSlide}>
             
-            <h1 className={currentSlide === 1 ? "hero-title-small" : ""}>
+            <h1>
             {heroSlides[currentSlide].title1}
             <br />
             {heroSlides[currentSlide].title2}
             <br />
-            <span>{heroSlides[currentSlide].highlight}</span>
+            <span className={currentSlide === 1 ? "hero-highlight-small" : ""}>
+              {heroSlides[currentSlides].highlight}
+            </span>
             </h1>
             
             <p>
