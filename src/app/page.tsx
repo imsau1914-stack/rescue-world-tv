@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 const featured = [
   {
     title: "God's Promises That Never Fail",
@@ -97,7 +99,40 @@ function ProgramCard({
   );
 }
 
+const heroSlides = [
+  {
+    title1: "Rescuing lives.",
+    title2: "Restoring purpose.",
+    highlight: "Revealing hope.",
+    description1: "Inspiring programs that strengthen your faith,",
+    description2: "health and family.",
+  },
+  {
+    title1: "Faith for today.",
+    title2: "Hope for tomorrow.",
+    highlight: "Christ for everyone.",
+    description1: "Biblical messages created to inspire,",
+    description2: "strengthen and transform lives.",
+  },
+  {
+    title1: "Healthy living.",
+    title2: "Stronger families.",
+    highlight: "A better life.",
+    description1: "Practical programs for your health,",
+    description2: "family and everyday life.",
+  },
+  {
+    title1: "Stories of faith.",
+    title2: "Messages of hope.",
+    highlight: "Around the world.",
+    description1: "Discover inspiring programs and stories",
+    description2: "from the Rescue World community.",
+  },
+];
+
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   return (
     <main className="site">
       
@@ -106,18 +141,19 @@ export default function Home() {
 
         <div className="hero-content">
           <div className="hero-copy">
+            
             <h1>
-              Rescuing lives.
-              <br />
-              Restoring purpose.
-              <br />
-              <span>Revealing hope.</span>
+            {heroSlides[currentSlide].title1}
+            <br />
+            {heroSlides[currentSlide].title2}
+            <br />
+            <span>{heroSlides[currentSlide].highlight}</span>
             </h1>
-
+            
             <p>
-              Inspiring programs that strengthen your faith,
+              {heroSlides[currentSlide].description1}
               <br />
-              health and family.
+              {heroSlides[currentSlide].description2}
             </p>
 
             <div className="hero-buttons">
@@ -146,13 +182,17 @@ export default function Home() {
           </aside>
         </div>
 
-        <div className="hero-dots">
-          <span className="selected" />
-          <span />
-          <span />
-          <span />
-        </div>
-      </section>
+       <div className="hero-dots">
+  {heroSlides.map((_, index) => (
+    <span
+      key={index}
+      className={currentSlide === index ? "selected" : ""}
+      onClick={() => setCurrentSlide(index)}
+    />
+  ))}
+</div> 
+     
+    </section>
 
       <section className="content-section" id="watch">
         <div className="section-heading">
