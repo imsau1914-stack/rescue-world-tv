@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const featured = [
   {
     title: "God's Promises That Never Fail",
@@ -106,6 +106,7 @@ const heroSlides = [
     highlight: "Revealing hope.",
     description1: "Inspiring programs that strengthen your faith,",
     description2: "health and family.",
+    image: "/hero-1.jpg",
   },
   {
     title1: "Faith for today.",
@@ -113,6 +114,7 @@ const heroSlides = [
     highlight: "Christ for everyone.",
     description1: "Biblical messages created to inspire,",
     description2: "strengthen and transform lives.",
+    image: "/hero-2.jpg",
   },
   {
     title1: "Healthy living.",
@@ -120,6 +122,7 @@ const heroSlides = [
     highlight: "A better life.",
     description1: "Practical programs for your health,",
     description2: "family and everyday life.",
+    image: "/hero-3.jpg",
   },
   {
     title1: "Stories of faith.",
@@ -127,16 +130,30 @@ const heroSlides = [
     highlight: "Around the world.",
     description1: "Discover inspiring programs and stories",
     description2: "from the Rescue World community.",
+    image: "/hero-4.jpg",
   },
 ];
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+    useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((current) => (current + 1) % heroSlides.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="site">
       
-     <section className="hero" id="live">
+    <section
+  className="hero"
+  id="live"
+  style={{
+    backgroundImage: `url(${heroSlides[currentSlide].image})`,
+  }}
+>
         <div className="hero-overlay" />
 
         <div className="hero-content">
