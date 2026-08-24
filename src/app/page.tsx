@@ -172,7 +172,7 @@ export default function Home() {
             {heroSlides[currentSlide].title2}
             <br />
             <span className={currentSlide === 1 ? "hero-highlight-small" : ""}>
-              {heroSlides[currentSlides].highlight}
+              {heroSlides[currentSlide].highlight}
             </span>
             </h1>
             
