@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const featured = [
   {
     title: "God's Promises That Never Fail",
@@ -145,7 +145,31 @@ const prevSlide = () => {
     (current) => (current - 1 + heroSlides.length) % heroSlides.length
   );
 };
-    useEffect(() => {
+
+  const touchStartX = useRef<number | null>(null);
+
+const handleTouchStart = (e: React.TouchEvent<HTMLElement>) => {
+  touchStartX.current = e.touches[0].clientX;
+};
+
+const handleTouchEnd = (e: React.TouchEvent<HTMLElement>) => {
+  if (touchStartX.current === null) return;
+
+  const touchEndX = e.changedTouches[0].clientX;
+  const distance = touchStartX.current - touchEndX;
+
+  if (distance > 50) {
+    nextSlide();
+  }
+
+  if (distance < -50) {
+    prevSlide();
+  }
+
+  touchStartX.current = null;
+};
+ 
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((current) => (current + 1) % heroSlides.length);
     }, 6000);
@@ -156,7 +180,12 @@ const prevSlide = () => {
   return (
     <main className="site">
       
-<section className="hero" id="live">
+<section
+  className="hero"
+  id="live"
+  onTouchStart={handleTouchStart}
+  onTouchEnd={handleTouchEnd}
+>
 
   <div className="hero-backgrounds">
   {heroSlides.map((slide, index) => (
