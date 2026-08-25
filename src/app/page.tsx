@@ -15,7 +15,7 @@ const featured = [
     duration: "24:12",
     image:
       "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85",
-    href: "/warch",
+    href: "/watch",
   },
   {
     title: "A Strong Family by Design",
