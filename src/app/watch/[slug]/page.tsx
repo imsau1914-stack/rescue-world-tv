@@ -38,11 +38,22 @@ export default async function ProgramPage({
     return <main>Program not found</main>;
   }
 
-  return (
-    <main>
+return (
+  <main className="program-page">
+    <section className="program-player">
+      <div className="video-placeholder">
+        <span>▶</span>
+      </div>
+    </section>
+
+    <section className="program-info">
       <h1>{program.title}</h1>
-      <p>{program.category}</p>
-      <p>{program.duration}</p>
-    </main>
-  );
+
+      <div className="program-meta">
+        <span>{program.category}</span>
+        <span>{program.duration}</span>
+      </div>
+    </section>
+  </main>
+);  
 }
