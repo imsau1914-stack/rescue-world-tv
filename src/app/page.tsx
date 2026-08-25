@@ -7,6 +7,7 @@ const featured = [
     duration: "28:45",
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
+    href: "/watch",
   },
   {
     title: "Power in Prayer",
@@ -14,6 +15,7 @@ const featured = [
     duration: "24:12",
     image:
       "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85",
+    href: "/warch",
   },
   {
     title: "A Strong Family by Design",
@@ -21,6 +23,7 @@ const featured = [
     duration: "31:09",
     image:
       "https://images.unsplash.com/photo-1504151932400-72d4384f04b3?auto=format&fit=crop&w=1200&q=85",
+    href: "/watch",
   },
   {
     title: "Living Well God's Way",
@@ -28,6 +31,7 @@ const featured = [
     duration: "19:33",
     image:
       "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=85",
+    href: "/watch",
   },
 ];
 
@@ -80,11 +84,19 @@ function ProgramCard({
   item,
   small = false,
 }: {
-  item: (typeof featured)[number];
+  item: (typeof featured)[number] | (typeof latest)[number];
   small?: boolean;
 }) {
   return (
-    <article className={`program-card ${small ? "program-card-small" : ""}`}>
+    <article
+  className={`program-card ${small ? "program-card-small" : ""}`}
+  onClick={() => {
+    if ("href" in item) {
+      window.location.href = item.href;
+    }
+  }}
+  style={{ cursor: "href" in item ? "pointer" : "default" }}
+>
       <div
         className="program-image"
         style={{ backgroundImage: `url("${item.image}")` }}
