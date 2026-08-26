@@ -25,6 +25,11 @@ const programs = {
     category: "HEALTH",
     duration: "19:33",
   },
+  "the-book-that-marked-history": {
+    title: "The Book That Marked History",
+    category: "DOCUMENTARIES",
+    duration: "4 Epiosodes",
+  },
 };
 
 export default async function ProgramPage({
