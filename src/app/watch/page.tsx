@@ -54,7 +54,7 @@ export default function WatchPage() {
       <div className="program-image">
         <span>▶</span>
       </div>
-      <h3>The Bestseller Throughout the Centuries</h3>
+      <h3>The Book That Marked History</h3>
       <p>DOCUMENTARIES</p>
     </article>
   ) : (
