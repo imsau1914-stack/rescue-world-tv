@@ -47,7 +47,7 @@ export default function WatchPage() {
       className="program-card"
       onClick={() =>
         (window.location.href =
-          "/watch/the-bestseller-throughout-the-centuries")
+          "/watch/the-book-that-marked-history")
       }
       style={{ cursor: "pointer" }}
     >
