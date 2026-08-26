@@ -44,12 +44,28 @@ export default async function ProgramPage({
   }
 
 return (
-  <main className="program-page">
-    <section className="program-player">
-      <div className="video-placeholder">
-        <span>▶</span>
-      </div>
-    </section>
+<section className="program-player">
+  {slug === "the-book-that-marked-history" ? (
+    <iframe
+      src="https://player.vimeo.com/video/843550134"
+      width="100%"
+      height="100%"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowFullScreen
+      style={{
+        border: 0,
+        width: "100%",
+        aspectRatio: "16 / 9",
+        borderRadius: "12px",
+      }}
+      title="The Bestseller Throughout the Centuries"
+    />
+  ) : (
+    <div className="video-placeholder">
+      <span>▶</span>
+    </div>
+  )}
+</section>
 
     <section className="program-info">
       <h1>{program.title}</h1>
