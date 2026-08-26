@@ -19,7 +19,12 @@ export default function WatchPage() {
         <h2>Explore Programs</h2>
 
         <div className="watch-categories">
-          <button className="active">ALL</button>
+          <button
+  className={activeCategory === "ALL" ? "active" : ""}
+  onClick={() => setActiveCategory("ALL")}
+>
+  ALL
+</button>
           <button>SERMONS</button>
           <button>FAITH</button>
           <button>HEALTH</button>
@@ -28,7 +33,12 @@ export default function WatchPage() {
           <button>MUSIC</button>
           <button>BIBLE STUDY</button>
           <button>PROPHECY</button>
-          <button>DOCUMENTARIES</button>
+          <button
+  className={activeCategory === "DOCUMENTARIES" ? "active" : ""}
+  onClick={() => setActiveCategory("DOCUMENTARIES")}
+>
+  DOCUMENTARIES
+</button>
         </div>
 
         <div className="watch-grid">
