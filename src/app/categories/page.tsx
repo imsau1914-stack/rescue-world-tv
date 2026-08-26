@@ -8,6 +8,8 @@ export default function CategoriesPage() {
     { name: "Music", description: "Praise, worship and inspirational music." },
     { name: "Bible Study", description: "Study Scripture and discover timeless truth." },
     { name: "Lifestyle", description: "Programs for balanced and purposeful living." },
+    { name: "Prophecy", description: "Biblical prophecy, end-time messages and hope." },  
+    { name: "Documentaries", description: "Documentaries that inspire." },
   ];
 
   return (
