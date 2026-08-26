@@ -110,7 +110,6 @@ export default function WatchPage() {
   )}
 </div> 
 
-        </div>
       </section>
     </main>
   );
