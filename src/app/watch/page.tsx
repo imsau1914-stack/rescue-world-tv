@@ -24,6 +24,8 @@ export default function WatchPage() {
           <button>KIDS</button>
           <button>MUSIC</button>
           <button>BIBLE STUDY</button>
+          <button>PROPHECY</button>
+          <button>DOCUMENTARIES</button>
         </div>
 
         <div className="watch-grid">
