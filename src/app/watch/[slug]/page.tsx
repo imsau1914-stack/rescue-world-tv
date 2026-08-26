@@ -44,7 +44,8 @@ export default async function ProgramPage({
   }
 
 return (
-<section className="program-player">
+<main className="program-page">
+  <section className=program-player">
   {slug === "the-book-that-marked-history" ? (
     <iframe
       src="https://player.vimeo.com/video/843550134"
