@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 export default function WatchPage() {
+  const [activeCategory, setActiveCategory] = useState("ALL");
   return (
     <main className="watch-page">
       <section className="watch-hero">
