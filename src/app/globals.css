@@ -2147,3 +2147,9 @@ button {
   background: #172637;
   transform: translateY(-2px);
 }
+
+.episode-list button.active-episode {
+  border-color: #ffb800;
+  background: #ffb800;
+  color: #08111d;
+}
