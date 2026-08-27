@@ -1,3 +1,5 @@
+"use client";
+import { use, useState } from "react";
 type ProgramPageProps = {
   params: Promise<{
     slug: string;
@@ -32,10 +34,11 @@ const programs = {
   },
 };
 
-export default async function ProgramPage({
+export default function ProgramPage({
   params,
 }: ProgramPageProps) {
-  const { slug } = await params;
+  const { slug } = use (params);
+  const [currentVideo, setCurrentVideo] = useState("843550134);
 
   const program = programs[slug as keyof typeof programs];
 
@@ -48,7 +51,7 @@ return (
   <section className="program-player">
   {slug === "the-book-that-marked-history" ? (
     <iframe
-      src="https://player.vimeo.com/video/843550134"
+      src={`https://player.vimeo.com/video/${currentVideo}`}
       width="100%"
       height="100%"
       allow="autoplay; fullscreen; picture-in-picture"
