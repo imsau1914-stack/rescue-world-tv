@@ -73,19 +73,31 @@ return (
 
   {slug === "the-book-that-marked-history" && (
   <section className="episode-list">
-    <button onClick={() => setCurrentVideo("843550134")}>
+    <button
+  className={currentVideo === "843550134" ? "active-episode" : ""}
+  onClick={() => setCurrentVideo("843550134")}
+>
       Episode 1 — The Bestseller Throughout the Centuries
     </button>
 
-    <button onClick={() => setCurrentVideo("843557898")}>
+    <button
+  className={currentVideo === "843557898" ? "active-episode" : ""}
+  onClick={() => setCurrentVideo("843557898")}
+>
       Episode 2 — The Bible Manuscripts
     </button>
 
-    <button onClick={() => setCurrentVideo("843613323")}>
+    <button
+  className={currentVideo === "843613323" ? "active-episode" : ""}
+  onClick={() => setCurrentVideo("843613323")}
+>
       Episode 3 — The Dead Sea Scrolls
     </button>
 
-    <button onClick={() => setCurrentVideo("845567545")}>
+    <button
+  className={currentVideo === "845567545" ? "active-episode" : ""}
+  onClick={() => setCurrentVideo("845567545")}
+>
       Episode 4 — Archeological Evidences
     </button>
   </section>
