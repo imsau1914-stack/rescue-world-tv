@@ -38,7 +38,7 @@ export default function ProgramPage({
   params,
 }: ProgramPageProps) {
   const { slug } = use (params);
-  const [currentVideo, setCurrentVideo] = useState("843550134);
+  const [currentVideo, setCurrentVideo] = useState("843550134");
 
   const program = programs[slug as keyof typeof programs];
 
