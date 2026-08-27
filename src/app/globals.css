@@ -2118,3 +2118,32 @@ button {
   font-size: 14px;
   font-weight: 700;
 }
+
+/* DOCUMENTARY EPISODES */
+
+.episode-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 22px 0 28px;
+}
+
+.episode-list button {
+  width: 100%;
+  padding: 16px 18px;
+  background: #111c28;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.episode-list button:hover {
+  border-color: #ffb800;
+  background: #172637;
+  transform: translateY(-2px);
+}
