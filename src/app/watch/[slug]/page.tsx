@@ -109,6 +109,13 @@ return (
         <span>{program.category}</span>
         <span>{program.duration}</span>
       </div>
+      {slug === "the-book-that-marked-history" && (
+  <p className="program-description">
+    A four-part documentary series exploring the history, preservation,
+    manuscripts, and archaeological evidence behind the Bible throughout
+    the centuries.
+  </p>
+)}
     </section>
   </main>
 );  
