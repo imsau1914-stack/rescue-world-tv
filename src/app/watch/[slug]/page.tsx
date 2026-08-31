@@ -40,6 +40,20 @@ export default function ProgramPage({
   const { slug } = use (params);
   const [currentVideo, setCurrentVideo] = useState("843550134");
 
+  const episodeDescriptions: Record<string, string> = {
+  "843550134":
+    "Discover how the Bible became one of the most influential and widely distributed books throughout history.",
+
+  "843557898":
+    "Explore the ancient manuscripts that preserved the biblical text through generations and helped transmit it across the centuries.",
+
+  "843613323":
+    "Examine the discovery and importance of the Dead Sea Scrolls and what they reveal about the preservation of Scripture.",
+
+  "845567545":
+    "Discover archaeological findings that provide historical context and evidence related to the people, places, and events of the Bible.",
+};
+
   const program = programs[slug as keyof typeof programs];
 
   if (!program) {
@@ -110,11 +124,9 @@ return (
         <span>{program.duration}</span>
       </div>
       {slug === "the-book-that-marked-history" && (
-  <p className="program-description">
-    A four-part documentary series exploring the history, preservation,
-    manuscripts, and archaeological evidence behind the Bible throughout
-    the centuries.
-  </p>
+<p className="program-description">
+  {episodeDescriptions[currentVideo]}
+</p>
 )}
     </section>
   </main>
