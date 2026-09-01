@@ -69,9 +69,14 @@ export default function ProgramPage({
 return (
 <main className="program-page">
   <section className="program-player">
-  {slug === "the-book-that-marked-history" ? (
+  {slug === "the-book-that-marked-history" ||
+  slug === "jerusalem-in-the-footsteps-of-jesus" ? (
     <iframe
-      src={`https://player.vimeo.com/video/${currentVideo}`}
+     src={
+  slug === "jerusalem-in-the-footsteps-of-jesus"
+    ? "https://player.vimeo.com/video/309833835"
+    : `https://player.vimeo.com/video/${currentVideo}`
+} 
       width="100%"
       height="100%"
       allow="autoplay; fullscreen; picture-in-picture"
