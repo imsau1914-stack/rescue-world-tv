@@ -44,7 +44,11 @@ export default function ProgramPage({
   params,
 }: ProgramPageProps) {
   const { slug } = use (params);
-  const [currentVideo, setCurrentVideo] = useState("843550134");
+  const [currentVideo, setCurrentVideo] = useState(
+  slug === "jerusalem-in-the-footsteps-of-jesus"
+    ? "309833835"
+    : "843550134"
+);
 
   const episodeDescriptions: Record<string, string> = {
   "843550134":
@@ -72,11 +76,7 @@ return (
   {slug === "the-book-that-marked-history" ||
   slug === "jerusalem-in-the-footsteps-of-jesus" ? (
     <iframe
-     src={
-  slug === "jerusalem-in-the-footsteps-of-jesus"
-    ? "https://player.vimeo.com/video/309833835"
-    : `https://player.vimeo.com/video/${currentVideo}`
-} 
+    src={`https://player.vimeo.com/video/${currentVideo}`}
       width="100%"
       height="100%"
       allow="autoplay; fullscreen; picture-in-picture"
@@ -125,6 +125,110 @@ return (
 >
       Episode 4 — Archeological Evidences
     </button>
+  </section>
+)}
+
+  {slug === "jerusalem-in-the-footsteps-of-jesus" && (
+  <section className="episode-list">
+
+    <button
+      className={currentVideo === "309833835" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("309833835")}
+    >
+      Chapter 1 — The Beloved City
+    </button>
+
+    <button
+      className={currentVideo === "310034570" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("310034570")}
+    >
+      Chapter 2 — The City Walls
+    </button>
+
+    <button
+      className={currentVideo === "310311941" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("310311941")}
+    >
+      Chapter 3 — The City of David
+    </button>
+
+    <button
+      className={currentVideo === "310511110" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("310511110")}
+    >
+      Chapter 4 — The Pool of Bethesda
+    </button>
+
+    <button
+      className={currentVideo === "311173370" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("311173370")}
+    >
+      Chapter 5 — The Mount of Olives
+    </button>
+
+    <button
+      className={currentVideo === "311382408" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("311382408")}
+    >
+      Chapter 6 — The Pool of Siloam
+    </button>
+
+    <button
+      className={currentVideo === "311629716" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("311629716")}
+    >
+      Chapter 7 — The Mount Zion
+    </button>
+
+    <button
+      className={currentVideo === "311933075" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("311933075")}
+    >
+      Chapter 8 — The Temple Mount
+    </button>
+
+    <button
+      className={currentVideo === "312134692" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("312134692")}
+    >
+      Chapter 9 — The Upper Room
+    </button>
+
+    <button
+      className={currentVideo === "312308789" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("312308789")}
+    >
+      Chapter 10 — The Garden of Gethsemane
+    </button>
+
+    <button
+      className={currentVideo === "312405821" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("312405821")}
+    >
+      Chapter 11 — The Palace of Caiphas
+    </button>
+
+    <button
+      className={currentVideo === "312649313" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("312649313")}
+    >
+      Chapter 12 — The Via Dolorosa
+    </button>
+
+    <button
+      className={currentVideo === "313005360" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("313005360")}
+    >
+      Chapter 13 — The Golgotha
+    </button>
+
+    <button
+      className={currentVideo === "313321926" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("313321926")}
+    >
+      Chapter 14 — The Mount of Ascension
+    </button>
+
   </section>
 )}
     <section className="program-info">
