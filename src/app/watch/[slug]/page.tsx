@@ -32,6 +32,12 @@ const programs = {
     category: "DOCUMENTARIES",
     duration: "4 Epiosodes",
   },
+  "jerusalem-in-the-footsteps-of-jesus": {
+    title: "Jerusalem, In the Footsteps of Jesus",
+    category: "DOCUMENTARIES",
+    duration: "14 Chapters",
+  },
+  
 };
 
 export default function ProgramPage({
