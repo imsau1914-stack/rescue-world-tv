@@ -43,6 +43,7 @@ export default function WatchPage() {
 
        <div className="watch-grid">
   {activeCategory === "DOCUMENTARIES" ? (
+  <>
     <article
       className="program-card"
       onClick={() =>
@@ -57,7 +58,23 @@ export default function WatchPage() {
       <h3>The Book That Marked History</h3>
       <p>DOCUMENTARIES</p>
     </article>
-  ) : (
+
+    <article
+      className="program-card"
+      onClick={() =>
+        (window.location.href =
+          "/watch/jerusalem-in-the-footsteps-of-jesus")
+      }
+      style={{ cursor: "pointer" }}
+    >
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>Jerusalem, In the Footsteps of Jesus</h3>
+      <p>DOCUMENTARIES</p>
+    </article>
+  </>
+) : (
     <>
       <article className="program-card">
         <div className="program-image">
