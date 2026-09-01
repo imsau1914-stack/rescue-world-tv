@@ -63,7 +63,22 @@ export default function ProgramPage({
   "845567545":
     "Discover archaeological findings that provide historical context and evidence related to the people, places, and events of the Bible.",
 };
-
+const jerusalemDescriptions: Record<string, string> = {
+  "309833835": "Discover Jerusalem, the beloved city of biblical history.",
+  "310034570": "Explore the ancient walls of Jerusalem.",
+  "310311941": "Discover the City of David and its biblical importance.",
+  "310511110": "Visit the Pool of Bethesda and its connection to Jesus.",
+  "311173370": "Explore the Mount of Olives and the ministry of Jesus.",
+  "311382408": "Discover the Pool of Siloam and its biblical history.",
+  "311629716": "Explore Mount Zion and its spiritual significance.",
+  "311933075": "Discover the Temple Mount and its historic importance.",
+  "312134692": "Explore the Upper Room and the final days of Jesus.",
+  "312308789": "Visit Gethsemane and the final hours before Jesus’ arrest.",
+  "312405821": "Explore the traditional site of Caiaphas’ palace.",
+  "312649313": "Follow the Via Dolorosa through Jerusalem.",
+  "313005360": "Explore Golgotha and the crucifixion of Jesus.",
+  "313321926": "Discover the Mount of Ascension and its biblical significance.",
+};
   const program = programs[slug as keyof typeof programs];
 
   if (!program) {
@@ -243,6 +258,11 @@ return (
   {episodeDescriptions[currentVideo]}
 </p>
 )}
+    {slug === "jerusalem-in-the-footsteps-of-jesus" && (
+<p className="program-description">
+  {jerusalemDescriptions[currentVideo]}
+</p>
+)}   
     </section>
   </main>
 );  
