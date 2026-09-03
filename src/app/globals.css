@@ -2242,6 +2242,11 @@ button {
 }
 
 .latest-slide {
-  flex: 0 0 calc(17% - 10px);
-  min-width: 180px;
+  flex: 0 0 190px;
+  width: 190px;
+  min-width: 190px;
+}
+
+.latest-slide .program-card-small {
+  width: 190px;
 }
