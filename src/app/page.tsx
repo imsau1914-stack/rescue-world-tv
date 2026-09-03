@@ -290,14 +290,37 @@ const handleTouchEnd = (e: React.TouchEvent<HTMLElement>) => {
           <a href="/watch">VIEW ALL &nbsp;›</a>
         </div>
 
-        <div className="featured-grid">
-          {featured.map((item) => (
-            <ProgramCard key={item.title} item={item} />
-          ))}
+        <div className="featured-carousel">
+  <button
+    className="carousel-arrow carousel-arrow-left"
+    onClick={() =>
+      document
+        .getElementById("featured-scroll")
+        ?.scrollBy({ left: -320, behavior: "smooth" })
+    }
+  >
+    ‹
+  </button>
 
-          <button className="carousel-arrow">›</button>
-        </div>
-      </section>
+  <div id="featured-scroll" className="featured-scroll">
+    {featured.map((item) => (
+      <div className="featured-slide" key={item.title}>
+        <ProgramCard item={item} />
+      </div>
+    ))}
+  </div>
+
+  <button
+    className="carousel-arrow carousel-arrow-right"
+    onClick={() =>
+      document
+        .getElementById("featured-scroll")
+        ?.scrollBy({ left: 320, behavior: "smooth" })
+    }
+  >
+    ›
+  </button>
+</div>      </section>
 
       <section className="content-section latest-section">
         <div className="section-heading">
