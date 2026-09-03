@@ -2184,7 +2184,7 @@ button {
 }
 
 .featured-slide {
-  flex: 0 0 calc(25% - 11px);
+  flex: 0 0 calc(28.5% - 11px);
   min-width: 240px;
 }
 
