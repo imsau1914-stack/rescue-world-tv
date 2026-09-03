@@ -2242,11 +2242,10 @@ button {
 }
 
 .latest-slide {
-  flex: 0 0 190px;
-  width: 190px;
-  min-width: 190px;
+  flex: 0 0 calc((100% - 70px) / 6);
+  min-width: 170px;
 }
 
 .latest-slide .program-card-small {
-  width: 190px;
+  width: 100%;
 }
