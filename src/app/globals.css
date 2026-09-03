@@ -2161,3 +2161,37 @@ button {
   font-size: 15px;
   line-height: 1.7;
 }
+
+/* FEATURED CAROUSEL */
+
+.featured-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.featured-scroll {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.featured-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-slide {
+  flex: 0 0 calc(25% - 11px);
+  min-width: 240px;
+}
+
+.carousel-arrow-left {
+  left: -22px;
+}
+
+.carousel-arrow-right {
+  right: -22px;
+}
