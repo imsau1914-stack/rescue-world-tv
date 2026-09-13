@@ -122,55 +122,68 @@ export default function WatchPage() {
     </article>
   </>
 ) : (
-    <>
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>The Word Alive</h3>
-        <p>SERMONS</p>
-      </article>
+      
+     <>
+  {(activeCategory === "ALL" || activeCategory === "SERMONS") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>The Word Alive</h3>
+      <p>SERMONS</p>
+    </article>
+  )}
 
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>Hope in Troubled Times</h3>
-        <p>FAITH</p>
-      </article>
+  {(activeCategory === "ALL" || activeCategory === "FAITH") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>Hope in Troubled Times</h3>
+      <p>FAITH</p>
+    </article>
+  )}
 
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>Healthy Choices Every Day</h3>
-        <p>HEALTH</p>
-      </article>
+  {(activeCategory === "ALL" || activeCategory === "HEALTH") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>Healthy Choices Every Day</h3>
+      <p>HEALTH</p>
+    </article>
+  )}
 
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>A Strong Family by Design</h3>
-        <p>FAMILY</p>
-      </article>
+  {(activeCategory === "ALL" || activeCategory === "FAMILY") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>A Strong Family by Design</h3>
+      <p>FAMILY</p>
+    </article>
+  )}
 
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>God Loves Me</h3>
-        <p>KIDS</p>
-      </article>
+  {(activeCategory === "ALL" || activeCategory === "KIDS") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>God Loves Me</h3>
+      <p>KIDS</p>
+    </article>
+  )}
 
-      <article className="program-card">
-        <div className="program-image">
-          <span>▶</span>
-        </div>
-        <h3>Praise & Worship</h3>
-        <p>MUSIC</p>
-      </article>
-    </>
+  {(activeCategory === "ALL" || activeCategory === "MUSIC") && (
+    <article className="program-card">
+      <div className="program-image">
+        <span>▶</span>
+      </div>
+      <h3>Praise & Worship</h3>
+      <p>MUSIC</p>
+    </article>
+  )}
+</> 
   )}
 </div> 
 
