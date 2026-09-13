@@ -25,14 +25,61 @@ export default function WatchPage() {
 >
   ALL
 </button>
-          <button>SERMONS</button>
-          <button>FAITH</button>
-          <button>HEALTH</button>
-          <button>FAMILY</button>
-          <button>KIDS</button>
-          <button>MUSIC</button>
-          <button>BIBLE STUDY</button>
-          <button>PROPHECY</button>
+         <button
+  className={activeCategory === "SERMONS" ? "active" : ""}
+  onClick={() => setActiveCategory("SERMONS")}
+>
+  SERMONS
+</button>
+
+<button
+  className={activeCategory === "FAITH" ? "active" : ""}
+  onClick={() => setActiveCategory("FAITH")}
+>
+  FAITH
+</button>
+
+<button
+  className={activeCategory === "HEALTH" ? "active" : ""}
+  onClick={() => setActiveCategory("HEALTH")}
+>
+  HEALTH
+</button>
+
+<button
+  className={activeCategory === "FAMILY" ? "active" : ""}
+  onClick={() => setActiveCategory("FAMILY")}
+>
+  FAMILY
+</button>
+
+<button
+  className={activeCategory === "KIDS" ? "active" : ""}
+  onClick={() => setActiveCategory("KIDS")}
+>
+  KIDS
+</button>
+
+<button
+  className={activeCategory === "MUSIC" ? "active" : ""}
+  onClick={() => setActiveCategory("MUSIC")}
+>
+  MUSIC
+</button>
+
+<button
+  className={activeCategory === "BIBLE STUDY" ? "active" : ""}
+  onClick={() => setActiveCategory("BIBLE STUDY")}
+>
+  BIBLE STUDY
+</button>
+
+<button
+  className={activeCategory === "PROPHECY" ? "active" : ""}
+  onClick={() => setActiveCategory("PROPHECY")}
+>
+  PROPHECY
+</button>
           <button
   className={activeCategory === "DOCUMENTARIES" ? "active" : ""}
   onClick={() => setActiveCategory("DOCUMENTARIES")}
