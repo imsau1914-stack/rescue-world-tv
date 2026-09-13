@@ -55,22 +55,7 @@ export default function FriendsKidsSeriesPage() {
           truth and choosing good friends.
         </p>
       </section>
-<button
-  onClick={() => {
-    window.location.href = "/watch";
-  }}
-  style={{
-    marginBottom: "18px",
-    background: "transparent",
-    border: "1px solid rgba(255,255,255,0.35)",
-    color: "white",
-    padding: "8px 14px",
-    borderRadius: "999px",
-    cursor: "pointer",
-  }}
->
-  ← Back to Kids
-</button>
+
       <section className="watch-content">
         <div
           style={{
