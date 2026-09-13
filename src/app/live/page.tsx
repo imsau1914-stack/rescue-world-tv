@@ -17,11 +17,26 @@ export default function LivePage() {
         <div className="live-layout">
           <section className="live-player-card">
             <div className="live-player">
-              <div className="live-player-placeholder">
-                <span>▶</span>
-                <h2>LIVE STREAM</h2>
-                <p>Cloudflare Stream player will appear here.</p>
-              </div>
+             <div
+  style={{
+    position: "relative",
+    paddingTop: "56.25%",
+  }}
+>
+  <iframe
+    src="https://customer-1ng5pjow0i2ni5oq.cloudflarestream.com/acea6a07508ca67f4bb2634612d82fe7/iframe"
+    style={{
+      border: "none",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      height: "100%",
+      width: "100%",
+    }}
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+    allowFullScreen
+  />
+</div>
             </div>
 
             <div className="live-program-info">
