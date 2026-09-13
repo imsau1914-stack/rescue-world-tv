@@ -173,6 +173,23 @@ export default function WatchPage() {
       <p>KIDS</p>
     </article>
   )}
+    
+ {(activeCategory === "ALL" || activeCategory === "KIDS") && (
+  <article
+    className="program-card"
+    onClick={() => {
+      window.location.href = "/watch/friends-kids-series";
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    <div className="program-image">
+      <span>▶</span>
+    </div>
+
+    <h3>FRIENDS Kids’ Series</h3>
+    <p>KIDS • 7 EPISODES</p>
+  </article>
+)}   
 
   {(activeCategory === "ALL" || activeCategory === "MUSIC") && (
     <article className="program-card">
