@@ -615,19 +615,37 @@ button {
   }
 
   .hero-content {
-    width: calc(100% - 35px);
+    width: calc(100% - 40px);
     grid-template-columns: 1fr;
-    padding: 48px 0;
+    padding: 28px 0 34px;
+    min-height: auto;
+    gap: 24px;
   }
 
   .hero-copy h1 {
-    font-size: 48px;
+    font-size: 34px;
+    line-height: 1.02;
+    margin-bottom: 12px;
   }
 
   .live-card {
-    max-width: 520px;
+    max-width: 440px;
+    width: 100%;
+  }
+  .hero-copy > p {
+    font-size: 17px;
+    margin bottom: 18px;
+  }
+  .hero-buttons {
+    gap: 12px;
   }
 
+  .primary-button,
+  .secundary-button {
+    min-height: 44px;
+    padding: 0 20px;
+  }
+  
   .content-section,
   .benefits {
     width: calc(100% - 35px);
