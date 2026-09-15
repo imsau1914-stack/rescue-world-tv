@@ -62,9 +62,6 @@ export default function Header() {
           DONATE <span>♡</span>
         </button>
 
-        <button className="signin-button">
-          ♟ &nbsp; SIGN IN
-        </button>
       </div>
     </header>
   );
