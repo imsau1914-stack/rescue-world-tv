@@ -975,10 +975,21 @@ button {
 }
 
 @media (max-width: 900px) {
-  .live-nav,
-  .live-top-actions {
-    display: none;
-  }
+  .live-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 22px;
+}
+
+.live-top-actions {
+  display: none;
+}
+
+.live-topbar {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
   .live-layout {
     grid-template-columns: 1fr;
