@@ -1000,6 +1000,30 @@ button {
   }
 }
 
+@media (max-width: 900px) {
+.live-topbar {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  gap: 8px;
+}
+
+.live-brand {
+  width: 100%;
+  justify-content: center;
+}
+
+.brand-logo {
+  max-width: 430px;
+  height: auto;
+}
+
+.live-nav {
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+}
 @media (max-width: 560px) {
   .live-topbar {
     padding: 0 20px;
