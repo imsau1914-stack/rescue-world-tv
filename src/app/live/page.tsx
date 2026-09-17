@@ -20,6 +20,7 @@ export default function LivePage() {
              <div
   style={{
     position: "relative",
+    width: "100%",
     paddingTop: "56.25%",
   }}
 >
