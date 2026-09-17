@@ -2302,3 +2302,10 @@ button {
 .latest-slide .program-card-small {
   width: 100%;
 }
+
+/* Hide LIVE NOW card on tablet and mobile */
+@media (max-width: 900px) {
+  .live-card {
+    display: none;
+  }
+}
