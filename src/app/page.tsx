@@ -18,12 +18,12 @@ const featured = [
     href: "/watch/power-in-prayer",
   },
   {
-    title: "A Strong Family by Design",
+    title: "Rescuing the Family",
     category: "FAMILY",
-    duration: "31:09",
+    duration: "43:11",
     image:
       "https://images.unsplash.com/photo-1504151932400-72d4384f04b3?auto=format&fit=crop&w=1200&q=85",
-    href: "/watch/strong-family",
+    href: "/watch/rescuing-the-family",
   },
   {
     title: "Living Well God's Way",
