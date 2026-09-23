@@ -154,15 +154,21 @@ export default function WatchPage() {
     </article>
   )}
 
-  {(activeCategory === "ALL" || activeCategory === "FAMILY") && (
-    <article className="program-card">
-      <div className="program-image">
-        <span>▶</span>
-      </div>
-      <h3>A Strong Family by Design</h3>
-      <p>FAMILY</p>
-    </article>
-  )}
+ {(activeCategory === "ALL" || activeCategory === "FAMILY") && (
+  <article
+    className="program-card"
+    onClick={() => {
+      window.location.href = "/watch/rescuing-the-family";
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    <div className="program-image">
+      <span>▶</span>
+    </div>
+    <h3>Rescuing the Family</h3>
+    <p>FAMILY</p>
+  </article>
+)}
 
   {(activeCategory === "ALL" || activeCategory === "KIDS") && (
     <article className="program-card">
