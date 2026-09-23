@@ -17,10 +17,10 @@ const programs = {
     category: "SERMONS",
     duration: "24:12",
   },
-  "strong-family": {
-    title: "A Strong Family by Design",
+  "rescuing-the-family": {
+    title: "Rescuing the Family",
     category: "FAMILY",
-    duration: "31:09",
+    duration: "43:11",
   },
   "living-well": {
     title: "Living Well God's Way",
@@ -47,6 +47,8 @@ export default function ProgramPage({
   const [currentVideo, setCurrentVideo] = useState(
   slug === "jerusalem-in-the-footsteps-of-jesus"
     ? "309833835"
+    : slug === "rescuing-the-family"
+    ? "268860186"
     : "843550134"
 );
 
@@ -89,7 +91,8 @@ return (
 <main className="program-page">
   <section className="program-player">
   {slug === "the-book-that-marked-history" ||
-  slug === "jerusalem-in-the-footsteps-of-jesus" ? (
+  slug === "jerusalem-in-the-footsteps-of-jesus" ||
+    slug === "rescuing-the-family" ? (
     <iframe
     src={`https://player.vimeo.com/video/${currentVideo}`}
       width="100%"
@@ -102,7 +105,7 @@ return (
         aspectRatio: "16 / 9",
         borderRadius: "12px",
       }}
-      title="The Bestseller Throughout the Centuries"
+      title="{program.title}"
     />
   ) : (
     <div className="video-placeholder">
