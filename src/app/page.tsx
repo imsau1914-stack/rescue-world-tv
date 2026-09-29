@@ -9,14 +9,14 @@ const featured = [
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
     href: "/watch/gods-promises",
   },
-  {
-    title: "Power in Prayer",
-    category: "SERMONS",
-    duration: "24:12",
-    image:
-      "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1200&q=85",
-    href: "/watch/power-in-prayer",
-  },
+ {
+  title: "Facing Fears",
+  category: "SERMONS",
+  duration: "",
+  image:
+    "https://i.vimeocdn.com/video/1651901619-0c93e4cfb3dcd9a38be4c76f44ea08e68dd3c7b9e0b890c50c221df219d4e42d-d",
+  href: "/watch/facing-fears",
+},
   {
     title: "Rescuing the Family",
     category: "FAMILY",
