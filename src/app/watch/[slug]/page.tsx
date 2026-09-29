@@ -37,7 +37,11 @@ const programs = {
     category: "DOCUMENTARIES",
     duration: "14 Chapters",
   },
-  
+  "Facing-fears": {
+    title: "Facing Fears",
+    category: "SERMONS",
+    duration: "",
+  },
 };
 
 export default function ProgramPage({
@@ -49,6 +53,8 @@ export default function ProgramPage({
     ? "309833835"
     : slug === "rescuing-the-family"
     ? "268860186"
+    : slug === "facing-fears"
+    ? "814764589"
     : "843550134"
 );
 
@@ -92,7 +98,8 @@ return (
   <section className="program-player">
   {slug === "the-book-that-marked-history" ||
   slug === "jerusalem-in-the-footsteps-of-jesus" ||
-    slug === "rescuing-the-family" ? (
+    slug === "rescuing-the-family" ||
+    slug === "facing-fears" ? (
     <iframe
     src={`https://player.vimeo.com/video/${currentVideo}`}
       width="100%"
