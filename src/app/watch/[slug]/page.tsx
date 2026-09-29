@@ -37,7 +37,7 @@ const programs = {
     category: "DOCUMENTARIES",
     duration: "14 Chapters",
   },
-  "Facing-fears": {
+  "facing-fears": {
     title: "Facing Fears",
     category: "SERMONS",
     duration: "",
