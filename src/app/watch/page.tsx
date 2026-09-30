@@ -205,9 +205,11 @@ export default function WatchPage() {
     style={{ cursor: "pointer" }}
   >
     <div className="program-image">
-      <span>▶</span>
-    </div>
-
+     <img
+       src="/jesus is my best friend.png"
+       alt="FRIENDS Kid's Series"
+       />
+      </div>
     <h3>FRIENDS Kids’ Series</h3>
     <p>KIDS • 7 EPISODES</p>
   </article>
