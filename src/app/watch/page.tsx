@@ -124,25 +124,41 @@ export default function WatchPage() {
 ) : (
       
      <>
-  {(activeCategory === "ALL" || activeCategory === "SERMONS") && (
-    <article className="program-card">
-      <div className="program-image">
-        <span>▶</span>
-      </div>
-      <h3>The Word Alive</h3>
-      <p>SERMONS</p>
-    </article>
-  )}
+ {(activeCategory === "ALL" || activeCategory === "SERMONS") && (
+  <article
+    className="program-card"
+    onClick={() => {
+      window.location.href = "/watch/facing-fears";
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    <div className="program-image">
+      <img src="/facing fears.jpeg" alt="Facing Fears" />
+    </div>
+    <h3>Facing Fears</h3>
+    <p>SERMONS</p>
+  </article>
+)}
 
-  {(activeCategory === "ALL" || activeCategory === "FAITH") && (
-    <article className="program-card">
-      <div className="program-image">
-        <span>▶</span>
-      </div>
-      <h3>Hope in Troubled Times</h3>
-      <p>FAITH</p>
-    </article>
-  )}
+{(activeCategory === "ALL" || activeCategory === "FAITH") && (
+  <article
+    className="program-card"
+    onClick={() => {
+      window.location.href = "/watch/god-loves-all-sinners";
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    <div className="program-image">
+      <img
+        src="/gods loves all sinners.png"
+        alt="God Loves All Sinners"
+      />
+      <span>9:46</span>
+    </div>
+    <h3>God Loves All Sinners</h3>
+    <p>FAITH</p>
+  </article>
+)}
 
   {(activeCategory === "ALL" || activeCategory === "HEALTH") && (
     <article className="program-card">
