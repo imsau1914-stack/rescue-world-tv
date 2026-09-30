@@ -259,7 +259,7 @@ return (
     >
       Chapter 14 — The Mount of Ascension
     </button>
-
+  </>
   </section>
 )}
     <section className="program-info">
