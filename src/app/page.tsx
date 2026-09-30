@@ -2,12 +2,12 @@
 import { useEffect, useRef, useState } from "react";
 const featured = [
   {
-    title: "God's Promises That Never Fail",
+    title: "God Loves All Sinners",
     category: "FAITH",
-    duration: "28:45",
+    duration: "9:46",
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
-    href: "/watch/gods-promises",
+    href: "/watch/god-loves-all-sinners",
   },
  {
   title: "Facing Fears",
