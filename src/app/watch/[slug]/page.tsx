@@ -156,6 +156,8 @@ return (
 >
       Episode 4 — Archeological Evidences
     </button>
+
+      </>
   </section>
 )}
 
@@ -259,9 +261,8 @@ return (
     >
       Chapter 14 — The Mount of Ascension
     </button>
-  </>
-  </section>
-)}
+    </section>
+    )}
     <section className="program-info">
       <h1>{program.title}</h1>
 
