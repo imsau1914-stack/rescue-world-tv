@@ -135,7 +135,7 @@ return (
      title={program.title}
    />
  ) : (
-   <div clasName="video-placeholder">
+   <div className="video-placeholder">
      <span>►</span>
    </div>
        )}
