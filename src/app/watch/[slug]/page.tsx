@@ -135,32 +135,35 @@ return (
      title={program.title}
    />
  ) : (
-    <>  
-    <button
-  className={currentVideo === "843557898" ? "active-episode" : ""}
-  onClick={() => setCurrentVideo("843557898")}
->
-      Episode 2 — The Bible Manuscripts
-    </button>
-
-    <button
-  className={currentVideo === "843613323" ? "active-episode" : ""}
-  onClick={() => setCurrentVideo("843613323")}
->
-      Episode 3 — The Dead Sea Scrolls
-    </button>
-
-    <button
-  className={currentVideo === "845567545" ? "active-episode" : ""}
-  onClick={() => setCurrentVideo("845567545")}
->
-      Episode 4 — Archeological Evidences
-    </button>
-      </>
+   <div clasName="video-placeholder">
+     <span>►</span>
+   </div>
        )}
   </section>
+{slug === "the-book-that-marked-history" && (
+  <section className="episode-list">
+    <button
+      className={currentVideo === "843557898" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("843557898")}
+    >
+      Episode 2 - The Bible Manuscripts
+    </button>
 
+    <button
+      className={currentVideo === "843613323" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("843613323")}
+    >
+      Episode 3 - The Dead Sea Scrolls
+    </button>
 
+    <button
+      className={currentVideo === "845567545" ? "active-episode" : ""}
+      onClick={() => setCurrentVideo("845567545")}
+    >
+      Episode 4 - Archeological Evidences
+    </button>
+  </section>
+)}
   {slug === "jerusalem-in-the-footsteps-of-jesus" && (
   <section className="episode-list">
 
