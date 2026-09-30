@@ -42,6 +42,11 @@ const programs = {
     category: "SERMONS",
     duration: "",
   },
+  "god-loves-all-sinners": {
+    title: "God Loves All Sinners",
+    category: "FAITH",
+    duration: "9:46",
+  },
 };
 
 export default function ProgramPage({
@@ -96,40 +101,41 @@ const jerusalemDescriptions: Record<string, string> = {
 return (
 <main className="program-page">
   <section className="program-player">
-  {slug === "the-book-that-marked-history" ||
-  slug === "jerusalem-in-the-footsteps-of-jesus" ||
-    slug === "rescuing-the-family" ||
-    slug === "facing-fears" ? (
-    <iframe
-    src={`https://player.vimeo.com/video/${currentVideo}`}
-      width="100%"
-      height="100%"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowFullScreen
-      style={{
-        border: 0,
-        width: "100%",
-        aspectRatio: "16 / 9",
-        borderRadius: "12px",
-      }}
-      title="{program.title}"
-    />
-  ) : (
-    <div className="video-placeholder">
-      <span>▶</span>
-    </div>
-  )}
-</section>
-
-  {slug === "the-book-that-marked-history" && (
-  <section className="episode-list">
-    <button
-  className={currentVideo === "843550134" ? "active-episode" : ""}
-  onClick={() => setCurrentVideo("843550134")}
->
-      Episode 1 — The Bestseller Throughout the Centuries
-    </button>
-
+ {slug === "god-loves-all-sinners" ? (
+   <iframe
+    src="https://iframe.videodelivery.net/497ef60525686c2db7272a86a1b19ead"
+     width="100%"
+    height="100%"
+     allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+     allowFullScreen
+    style={{
+       border: 0,
+       width: "100%",
+       aspectRatio: "16 / 9",
+       borderRadius: "12px",
+     }}
+     title={program.title}
+   />
+ ) : slug === "the-book-that-marked-history" ||
+     slug === "jerusalem-in-the-footsteps-of-jesus" ||
+     slug === "rescuing-the-family" ||
+     slug === "facing-fears" ? (
+   <iframe
+     src={`https://player.vimeo.com/video/${currentVideo}`}
+     width="100%"
+     height="100%"
+     allow="autoplay; fullscreen; picture-in-picture"
+     allowFullScreen
+     style={{
+       border: 0,
+       width: "100%",
+       aspectRatio: "16 / 9",
+      borderRadius: "12px",
+     }}
+     title={program.title}
+   />
+ ) : (
+       
     <button
   className={currentVideo === "843557898" ? "active-episode" : ""}
   onClick={() => setCurrentVideo("843557898")}
