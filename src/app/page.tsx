@@ -5,8 +5,7 @@ const featured = [
     title: "God Loves All Sinners",
     category: "FAITH",
     duration: "9:46",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
+    image: "/gods loves all sinners.png",
     href: "/watch/god-loves-all-sinners",
   },
  {
