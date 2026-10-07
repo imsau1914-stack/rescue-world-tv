@@ -24,12 +24,11 @@ const featured = [
     href: "/watch/rescuing-the-family",
   },
   {
-    title: "Living Well God's Way",
+    title: "The System of the Human Body",
     category: "HEALTH",
-    duration: "19:33",
-    image:
-      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=85",
-    href: "/watch/living-well",
+    duration: "26:57",
+    image: "/human body.jpg",
+    href: "/watch/the-system-of-the-human-body",
   },
 ];
 
