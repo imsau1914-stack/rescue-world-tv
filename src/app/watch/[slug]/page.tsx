@@ -47,7 +47,13 @@ const programs = {
     category: "FAITH",
     duration: "9:46",
   },
+  "the-system-of-the-human-body": {
+    title: "The System of the Human Body",
+    category: "HEALTH",
+    duration: "26:57",
+  },
 };
+
 
 export default function ProgramPage({
   params,
@@ -60,6 +66,8 @@ export default function ProgramPage({
     ? "268860186"
     : slug === "facing-fears"
     ? "814764589"
+    : slug === "the-system-of-the-human-body"
+    ? "368195222"
     : "843550134"
 );
 
@@ -119,7 +127,9 @@ return (
  ) : slug === "the-book-that-marked-history" ||
      slug === "jerusalem-in-the-footsteps-of-jesus" ||
      slug === "rescuing-the-family" ||
-     slug === "facing-fears" ? (
+     slug === "facing-fears" ||
+     slug === "the-system-of-the-human-body" ? (
+    
    <iframe
      src={`https://player.vimeo.com/video/${currentVideo}`}
      width="100%"
