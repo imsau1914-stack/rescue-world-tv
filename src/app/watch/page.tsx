@@ -160,16 +160,26 @@ export default function WatchPage() {
   </article>
 )}
 
-  {(activeCategory === "ALL" || activeCategory === "HEALTH") && (
-    <article className="program-card">
-      <div className="program-image">
-        <span>▶</span>
-      </div>
-      <h3>Healthy Choices Every Day</h3>
-      <p>HEALTH</p>
-    </article>
-  )}
+ {(activeCategory === "ALL" || activeCategory === "HEALTH") && (
+  <article
+    className="program-card"
+    onClick={() => {
+      window.location.href = "/watch/the-system-of-the-human-body";
+    }}
+    style={{ cursor: "pointer" }}
+  >
+    <div className="program-image">
+      <img
+        src="/human body.jpg"
+        alt="The System of the Human Body"
+      />
+      <span>26:57</span>
+    </div>
 
+    <h3>The System of the Human Body</h3>
+    <p>HEALTH</p>
+  </article>
+)}
  {(activeCategory === "ALL" || activeCategory === "FAMILY") && (
   <article
     className="program-card"
