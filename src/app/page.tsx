@@ -222,19 +222,19 @@ const handleTouchEnd = (e: React.TouchEvent<HTMLElement>) => {
           <div className="hero-copy" key={currentSlide}>
             
             <h1>
-            {heroSlides[currentSlide].title1}
+            {t.hero[currentSlide].title1}
             <br />
-            {heroSlides[currentSlide].title2}
+            {t.hero[currentSlide].title2}
             <br />
             <span className={currentSlide === 1 ? "hero-highlight-small" : ""}>
-              {heroSlides[currentSlide].highlight}
+              {t.hero[currentSlide].highlight}
             </span>
             </h1>
             
             <p>
-              {heroSlides[currentSlide].description1}
+              {t.hero[currentSlide].description1}
               <br />
-              {heroSlides[currentSlide].description2}
+              {t.hero[currentSlide].description2}
             </p>
 
             <div className="hero-buttons">
