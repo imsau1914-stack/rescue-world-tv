@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { getDictionary, type Locale } from "../dictionaries";
 const featured = [
   {
     title: "God Loves All Sinners",
@@ -143,7 +144,14 @@ const heroSlides = [
   },
 ];
 
-export default function Home() {
+
+export default function Home({
+  locale = "en",
+}: {
+  locale?: Locale;
+} = {}) {
+  const t = getDictionary(locale);
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const nextSlide = () => {
   setCurrentSlide((current) => (current + 1) % heroSlides.length);
