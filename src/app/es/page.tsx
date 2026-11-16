@@ -1,14 +1,6 @@
 
-import { es } from "../../dictionaries/es";
+import Home from "../page";
 
 export default function SpanishHome() {
-  return (
-    <main className="site">
-      <section className="content-section">
-        <h1>Rescue World TV</h1>
-        <h2>{es.home.featured}</h2>
-        <p>{es.benefits.anywhereDescription}</p>
-      </section>
-    </main>
-  );
+  return <Home locale="es" />;
 }
