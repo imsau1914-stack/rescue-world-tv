@@ -28,4 +28,35 @@ export const es = {
     impact: "MARCA LA DIFERENCIA",
     impactDescription: "Comparte esperanza. Transforma vidas.",
   },
+
+  hero: [
+    {
+      title1: "Rescatando vidas.",
+      title2: "Restaurando el propósito.",
+      highlight: "Revelando esperanza.",
+      description1: "Programas inspiradores que fortalecen tu fe,",
+      description2: "tu salud y tu familia.",
+    },
+    {
+      title1: "Fe para hoy.",
+      title2: "Esperanza para mañana.",
+      highlight: "Cristo para todos.",
+      description1: "Mensajes bíblicos creados para inspirar,",
+      description2: "fortalecer y transformar vidas.",
+    },
+    {
+      title1: "Vida saludable.",
+      title2: "Familias más fuertes.",
+      highlight: "Una vida mejor.",
+      description1: "Programas prácticos para tu salud,",
+      description2: "tu familia y tu vida cotidiana.",
+    },
+    {
+      title1: "Historias de fe.",
+      title2: "Mensajes de esperanza.",
+      highlight: "Alrededor del mundo.",
+      description1: "Descubre programas e historias inspiradoras",
+      description2: "de la comunidad Rescue World.",
+    },
+  ],
 };
