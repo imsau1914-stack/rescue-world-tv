@@ -239,11 +239,11 @@ const handleTouchEnd = (e: React.TouchEvent<HTMLElement>) => {
 
             <div className="hero-buttons">
               <a className="primary-button" href="/live">
-                ▶ &nbsp; WATCH LIVE
+                ▶ &nbsp; {t.home.watchLive}
               </a>
 
-              <a className="secondary-button" href="watch">
-                BROWSE PROGRAMS
+              <a className="secondary-button" href="/watch">
+                {t.home.browsePrograms}
               </a>
             </div>
           </div>
