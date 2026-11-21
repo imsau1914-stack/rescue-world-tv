@@ -248,19 +248,21 @@ const handleTouchEnd = (e: React.TouchEvent<HTMLElement>) => {
             </div>
           </div>
 
-          <aside className="live-card">
-            <span className="live-now">● LIVE NOW</span>
+          
+<aside className="live-card">
+  <span className="live-now">● {t.home.liveNow}</span>
 
-            <h2>Rescue World TV</h2>
+  <h2>Rescue World TV</h2>
 
-            <p className="inspiration">24/7 Inspiration</p>
+  <p className="inspiration">{t.home.inspiration}</p>
 
-            <div className="live-divider" />
+  <div className="live-divider" />
 
-            <a href="/live" className="watch-live-button">
-              ▶ &nbsp; WATCH LIVE
-            </a>
-          </aside>
+  <a href="/live" className="watch-live-button">
+    ▸ &nbsp; {t.home.watchLive}
+  </a>
+</aside>
+
         </div>
 <button
   className="hero-arrow hero-arrow-left"
