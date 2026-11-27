@@ -19,6 +19,8 @@ export default function Footer() {
           <a href="/watch">Watch</a>
           <a href="/categories">Categories</a>
           <a href="/about">About</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
         </div>
 
         <div className="footer-bottom">
